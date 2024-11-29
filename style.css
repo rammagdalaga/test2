@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.view {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;             
+    padding: 0;             
+    overflow-x: hidden;     
+    font-family: Arial, sans-serif;
+    height: 340vh;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 13px;
+}
+
+.main {
+    position: relative;      
+    top: 0;                  
+    left: 0;                 
+    width: 100vw;            
+    height: 100vh;           
+}
+
+.main img {
+    width: 100%;             
+    height: 100%;            
+    object-fit: cover;                 
+}
+
+.mainTitle {
+    position: absolute;
+    left: 50px;
+    top: -70px;
+    z-index: 1;
+    height: 250px;
+    width: 250px;
+
+}
+
+.welcomeText {
+    position: absolute;
+    left: 50px;
+    top: 125px;
+    z-index: 1;
+    height: 450px;
+    width: 400px;
+}
+
+.desc {
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    z-index: 1;
+    height: 55%;
+    width: 65%;
+
+}
+
+.desc2 {
+  position: absolute;
+  left: 50px;
+  top: 400px;
+  z-index: 1;
+  height: 35%;
+  width: 40%;
+
+}
+
+/* Buttons ito */
+.container {
+  position: relative;
+  width: 50%;
+  height: 4dvh;
+  display: flex;
+  left: 65px;
+  top: 610px;
+}
+
+#btn{
+  padding: 0.1rem 0.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: transparent;
+  color: black;
+  border-radius: 13px;
+  border: 2px solid black;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+#btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  transition: 0.5s;
+  z-index: -1;
+
+}
+
+#btn:hover::before {
+  width: 100%;
+
+}
+
+#btn:hover {
+  color: #081b29;
+}
+
+
+#btn-2{
+  padding: 0.3rem 1.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: transparent;
+  color: black;
+  border-radius: 13px;
+  border: 2px solid black;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  left: 10px;
+
+}
+
+#btn-2::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00abf0;
+  transition: 0.5s;
+  z-index: -1;
+
+}
+
+#btn-2:hover::before {
+  background: gray;
+
+}
+
+#btn-3{
+  padding: 0.1rem 0.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: transparent;
+  color: black;
+  border-radius: 13px;
+  border: 2px solid black;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  top: 4700%;
+  left: 43.5%;
+
+}
+
+#btn-3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  transition: 0.5s;
+  z-index: -1;
+
+}
+
+#btn-3:hover::before {
+  width: 100%;
+
+}
+
+#btn-3:hover {
+  color: #081b29;
+}
+
+/* Nav ito */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  position: relative;
+  left: 69%;
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+a{
+  width: max-content;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px 0;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  left: 70%;
+  color: black;
+}
+
+a::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Design ito */
+.design1 {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    height: 100%;
+    width: 80%;
+    z-index: 0;
+    opacity: 50%;
+
+}
+
+.design2 {
+  position: absolute;
+  left: 0px;
+  top: 90%;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  opacity: 50%;
+
+}
+
+/* Picture ito */
+
+.photo-1 {
+  position: absolute;
+  overflow: hidden;
+  left: 75%;
+  top: 50%;
+
+}
+
+.photo-2 {
+  position: absolute;
+  left: 70%;
+  top: 17%;
+  width: 20%;
+
+}
+
+.photo-3 {
+  position: absolute;
+  left: 55%;
+  top: 57%;
+  width: 15%;
+
+}
+
+.photo-4 {
+  position: absolute;
+  left: 73%;
+  top: 47%;
+  width: 4%;
+
+}
+
+/* Services Page ito */
+
+.service-text {
+  position: relative;
+  left: 13%;
+  top: 810px;
+
+}
+
+.service1-image {
+  position: absolute;
+  left: 80px;
+  top: 135%;
+  width: 200px;
+  transition: transform 0.3s;
+
+}
+
+.service2-image {
+  position: absolute;
+  left: 305px;
+  top: 135%;
+  width: 200px;
+  transition: transform 0.3s;
+
+}
+
+.service-desc {
+  position: absolute;
+  left: 13%;
+  top: 110%;
+
+}
+
+.service3-image {
+  position: absolute;
+  left: 525px;
+  top: 135%;
+  width: 200px;
+  transition: transform 0.3s;
+
+}
+
+.service4-image {
+  position: absolute;
+  left: 750px;
+  top: 135%;
+  width: 200px;
+  transition: transform 0.3s;
+
+}
+
+.service5-image {
+  position: absolute;
+  left: 975px;
+  top: 135%;
+  width: 200px;
+  transition: transform 0.3s;
+
+}
+
+.service1-image:hover {
+  transform: translateY(-15px);
+
+}
+
+.service2-image:hover {
+  transform: translateY(-15px);
+
+}
+
+.service3-image:hover {
+  transform: translateY(-15px);
+
+}
+
+.service4-image:hover {
+  transform: translateY(-15px);
+
+}
+
+.service5-image:hover {
+  transform: translateY(-15px);
+
+}
+
+/* About Us Page */
+
+.about-us {
+  position: absolute;
+  left: 20%;
+  top: 190%;
+  font-size: 25px;
+
+}
+
+.about-desc {
+  position: absolute;
+  left: 25.5%;
+  top: 245%;
+
+}
+
+.about-us-call {
+  position: absolute;
+  font-size: 25px;
+  left: 22%;
+  top: 250%;
+
+}
+
+.mission-image {
+  position: absolute;
+  top: 200%;
+  left: 280px;
+  width: 300px;
+  transition: transform 0.2s;
+  transform: scale(1);
+}
+
+.vision-image {
+  position: absolute;
+  top: 200%;
+  left: 680px;
+  width: 300px;
+  transform: scale(1);
+  transition: transform 0.2s;
+
+}
+
+.mission-image:hover {
+  transform: scale(1.2);
+}
+
+.vision-image:hover {
+  transform: scale(1.2);
+}
+
+/* Contact Page */
+
+.contact-text {
+  position: absolute;
+  left: 36.4%;
+  top: 280%;
+  width: 345px;
+
+}
+
+.contact-text-2 {
+  position: absolute;
+  left: 33%;
+  top: 283%;
+
+}
+
+.fb-image {
+  position: absolute;
+  left: 40%;
+  top: 295%;
+  width: 45px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: translateY(0);
+
+}
+
+.ig-image {
+  position: absolute;
+  left: 45%;
+  top: 295%;
+  width: 45px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: translateY(0);
+
+
+}
+
+.in-image {
+  position: absolute;
+  left: 50%;
+  top: 295%;
+  width: 45px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: translateY(0);
+
+
+}
+
+.x-image {
+  position: absolute;
+  left: 55%;
+  top: 295%;
+  width: 45px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: translateY(0);
+
+
+}
+
+.email-image {
+  position: absolute;
+  left: 35.5%;
+  top: 305%;
+  width: 360px;
+
+}
+
+.phone-image {
+  position: absolute;
+  left: 40.5%;
+  top: 308.5%;
+  width: 220px;
+
+}
+
+.fb-image:hover {
+  transform: translateY(-15px);
+
+}
+
+.ig-image:hover {
+  transform: translateY(-15px);
+
+}
+
+.in-image:hover {
+  transform: translateY(-15px);
+
+}
+
+.x-image:hover {
+  transform: translateY(-15px);
+
+}
+
+/* Bottom */
+
+.bottom-image {
+  position: absolute;
+  top: 330%;
+}
+
+.bottom-Text {
+  position: absolute;
+  top: 350%;
+  left: 24.5%;
+
+}
+
+/* animations */
+
+.hidden {
+  opacity: 0;
+  transition: all 3s;
+
+}
+
+.hidden.show {
+  opacity: 1;
+
+}
+
+.slide {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(500px);
+  transition: opacity 3s ease, filter 3s ease, transform 3s ease;
+  position: relative;
+  will-change: transform, opacity, filter;
+}
+
+.slide.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(400px);
+}
+
+.slideUp {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(600px);
+  transition: opacity 5s ease, filter 5s ease, transform 5s ease;
+  position: relative;
+  will-change: transform, opacity, filter;
+}
+
+.slideUp.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(400px);
+}
+
+.slideUp-Btn {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(600px);
+  transition: opacity 10s ease, filter 10s ease, transform 10s ease;
+  position: relative;
+  will-change: transform, opacity, filter;
+}
+
+.slideUp-Btn.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(400px);
+}
+
+.slideDown {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100px);
+  transition: opacity 3s ease, filter 3s ease, transform 3s ease;
+  transition: opacity 3s ease, filter 3s ease, transform 3s ease;
+}
+
+.slideDown.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+/* Bar */
+.bar-image {
+  display: none;
+  position: relative;
+  width: 35px;
+  left: 90%;
+}
+
+ /* responsive */
+
+ #main {
+  min-height: 70vh;
+
+ }
+
+ .container-bar {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+ }
+
+@media (max-width: 500px) {
+
+    body {
+      height: 300vh;
+
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .bar-image {
+      display: block;
+    }
+
+    .mainTitle {
+      width: 200px;
+      left: 25px;
+    }
+
+    .welcomeText {
+      width: 300px;
+      top: 50px;
+      left: 25px;
+    }
+
+    .desc {
+      width: 90%;
+      height: 50%;
+      left: 25px;
+      top: 150px;
+    }
+
+    .desc2 {
+      width: 70%;
+      left: 25px;
+      top: 280px;
+    }
+
+    #btn {
+      top: -450%;
+      font-size: 8px;
+      width: 50%;
+      left: -25px;
+
+    }
+    
+    #btn-2 {
+      top: -450%;
+      font-size: 8px;
+      width: 60%;
+      left: -15px;
+
+    }
+
+    .photo-1 {
+      position: relative;
+      width: 150px;
+      top: -40px;
+      left: 350px;
+    }
+
+    .photo-2 {
+      position: relative;
+      width: 100px;
+      top: -50px;
+    }
+
+    .photo-3 {
+      position: relative;
+      width: 70px;
+      top: -330px;
+      left: 250px;
+    }
+
+    .photo-4 {
+      position: relative;
+      width: 35px;
+      top: -60px;
+      left: 400px;
+    }
+
+    .design1 {
+      display: none;
+    }
+
+    .design2 {
+      display: none;
+
+    }
+
+    .service-text {
+      position: relative;
+      text-align: center;
+      top: 300px;
+      width: 90%;
+      height: 20%;
+      font-size: 20px;
+      left: 25px;
+    }
+
+    .service-desc {
+      position: relative;
+      width: 90%;
+      top: 320px;
+      left: 26px;
+
+    }
+
+    .service1-image {
+      position: relative;
+      width: 20%;
+      top: 350px;
+
+    }
+
+    .service2-image {
+      position: relative;
+      width: 20%;
+      top: 350px;
+      left: 100px;
+
+    }
+
+    .service3-image {
+      position: relative;
+      width: 20%;
+      top: 350px;
+      left: 120px;
+
+    }
+
+    .service4-image {
+      position: relative;
+      width: 20%;
+      top: 530px;
+      left: -170px;
+
+    }
+
+    .service5-image {
+      position: relative;
+      width: 20%;
+      top: 385px;
+      left: 270px;
+
+    }
+
+    .about-us {
+      position: relative;
+      text-align: center;
+      top: 500px;
+      width: 90%;
+      height: 20%;
+      font-size: 20px;
+      left: 25px;
+    }
+
+    .mission-image {
+      position: relative;
+      top: 530px;
+      left: 55px;
+      width: 35%;
+
+    }
+
+    .vision-image {
+      position: relative;
+      top: 530px;
+      left: 85px;
+      width: 35%;
+
+    }
+
+    .about-desc {
+      position: relative;
+      top: 800px;
+      left: 80px;
+      width: 70%;
+
+    }
+
+    .about-us-call {
+      position: relative;
+      text-align: center;
+      top: 620px;
+      width: 90%;
+      height: 20%;
+      font-size: 20px;
+      left: 25px;
+    }
+
+    #btn-3 {
+      top: 3750%;
+      font-size: 8px;
+      width: 60%;
+      left: -23px;
+
+    }
+
+    .contact-text {
+      position: relative;
+      top: 800px;
+      left: 140px;
+      width: 45%;
+
+    }
+
+    .contact-text-2 {
+      position: relative;
+      text-align: center;
+      top: 810px;
+      width: 100%;
+      height: 50%;
+      font-size: 25px;
+      left: 5px;
+    }
+
+    .fb-image {
+      position: relative;
+      width: 7%;
+      top: 880px;
+      left: 145px;
+
+    }
+
+    .ig-image {
+      position: relative;
+      width: 7%;
+      top: 880px;
+      left: 165px;
+
+    }
+
+    .in-image {
+      position: relative;
+      width: 7%;
+      top: 880px;
+      left: 183px;
+
+    }
+
+    .x-image {
+      position: relative;
+      width: 7%;
+      top: 880px;
+      left: 200px;
+
+    }
+
+    .email-image {
+      position: relative;
+      top: 950px;
+      left: -20px;
+      width: 45%;
+
+    }
+
+    .phone-image {
+      position: relative;
+      top: 950px;
+      left: 175px;
+      width: 30%;
+
+    }
+
+    .bottom-image {
+      position: relative;
+      top: 1000px;
+      height: 300px;
+    }
+
+    .bottom-Text {
+      position: absolute;
+      top: 290%;
+      left: 8%;
+      font-size: 20px;
+
+    }
+
+}
